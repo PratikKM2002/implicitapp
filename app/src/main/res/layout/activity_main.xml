@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to Call -->
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call Now"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Website URL Input -->
+    <EditText
+        android:id="@+id/webInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Website URL"
+        android:inputType="textUri"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to Open Website -->
+    <Button
+        android:id="@+id/browseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Website"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button to Close the App -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close App"
+        android:padding="12dp" />
+
+</LinearLayout>
