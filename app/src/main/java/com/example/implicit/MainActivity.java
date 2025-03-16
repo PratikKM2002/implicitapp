@@ -43,8 +43,9 @@ public class MainActivity extends AppCompatActivity {
     private void initiateCall() {
         String number = phoneInput.getText().toString().trim();
 
-        if (number.isEmpty() || !number.matches("^\\+?\\d{7,15}$")) {
-            Toast.makeText(this, "Please provide a valid phone number", Toast.LENGTH_SHORT).show();
+        // Validate that the number is exactly 10 digits
+        if (number.isEmpty() || !number.matches("^[0-9]{10}$")) {
+            Toast.makeText(this, "Please provide a valid 10-digit phone number", Toast.LENGTH_SHORT).show();
             return;
         }
 
